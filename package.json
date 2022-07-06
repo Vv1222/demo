@@ -1,0 +1,42 @@
+{
+  "name": "vite_vue3_ts",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "eslint:comment": "使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .js 和 .vue 的文件",
+    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "prettier:comment": "自动格式化当前目录下的所有文件",
+    "prettier": "prettier --write"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.6",
+    "@vueuse/core": "^8.6.0",
+    "axios": "^0.27.2",
+    "echarts": "^5.3.3",
+    "element-plus": "^2.2.6",
+    "pinia": "^2.0.14",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.16"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "consola": "^2.15.3",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.3",
+    "typescript": "^4.5.4",
+    "unplugin-auto-import": "^0.9.1",
+    "unplugin-vue-components": "^0.20.1",
+    "vite": "^2.9.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vue-tsc": "^0.34.7"
+  }
+}
