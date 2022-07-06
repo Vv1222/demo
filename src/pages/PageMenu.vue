@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MenuTree from './MenuTree.vue';
+import PageMenuTree from './PageMenuTree.vue';
 
 const handleOpen = (key: string, keyPath: string[]) => {
     console.log(key, keyPath);
@@ -17,7 +17,9 @@ const handleClose = (key: string, keyPath: string[]) => {
         @open="handleOpen"
         @close="handleClose"
     >
-        <menu-tree :menu-list="$router.options.routes[0].children"></menu-tree>
+        <page-menu-tree
+            :menu-list="$router.options.routes[0].children"
+        ></page-menu-tree>
 
         <!-- <template v-for="i in $router.options.routes[0].children" :key="i.path">
             <el-sub-menu v-if="i.children" :index="i.path">

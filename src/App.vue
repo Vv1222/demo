@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <RouterView></RouterView>
+    <RouterView />
 </template>
 
 <style>

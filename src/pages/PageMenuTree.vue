@@ -17,7 +17,7 @@ withDefaults(defineProps<Props>(), {
                 <el-icon><location /></el-icon>
                 <span>{{ i.name }}</span>
             </template>
-            <menu-tree :menu-list="i.children"></menu-tree>
+            <page-menu-tree :menu-list="i.children"></page-menu-tree>
         </el-sub-menu>
         <el-menu-item v-else :index="i.path"> {{ i.name }} </el-menu-item>
     </template>

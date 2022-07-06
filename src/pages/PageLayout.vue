@@ -17,7 +17,7 @@ const handleClose = (key: string, keyPath: string[]) => {
                     <PageMenu />
                 </el-aside>
                 <el-main>
-                    <RouterView></RouterView>
+                    <RouterView />
                 </el-main>
             </el-container>
         </div>
