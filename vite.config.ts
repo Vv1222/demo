@@ -21,6 +21,8 @@ export default defineConfig({
             resolvers: [ElementPlusResolver()],
         }),
         Components({
+            dts: true,
+            dirs: ['src/components'],
             resolvers: [ElementPlusResolver()],
         }),
         // gzip压缩 生产环境生成 .gz 文件
